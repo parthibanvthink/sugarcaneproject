@@ -1,10 +1,30 @@
-<p style="color: green"><%= notice %></p>
 
-<%= render @login %>
+<head>
+  <!-- Other head elements -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
 
-<div>
-  <%= link_to "Edit this login", edit_login_path(@login) %> |
-  <%= link_to "Back to logins", logins_path %>
+<div class="container bg-gray-100 mx-auto px-8 py-12">
+  <h1 class="text-4xl font-bold mb-8 text-center text-gray-800">Sugarcane Cultivation</h1>
 
-  <%= button_to "Destroy this login", @login, method: :delete %>
+  <div class="mb-12 bg-white rounded-lg shadow-lg p-8">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900">Introduction</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">
+      Sugarcane cultivation is an important agricultural practice worldwide, with a long history dating back centuries. It is valued for its versatility, providing not only sugar but also molasses, rum, ethanol, and other by-products. The cultivation of sugarcane plays a significant role in the economy of many countries, providing employment opportunities and contributing to food security.
+    </p>
+  </div>
+
+  <div class="mb-12 bg-white rounded-lg shadow-lg p-8">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900">Climate and Soil Requirements</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">
+      Sugarcane thrives in tropical and subtropical climates with warm temperatures and adequate rainfall. It requires well-drained soils with good fertility and a pH range of 5.5 to 8.5. Sandy loam or loamy soils are ideal for sugarcane cultivation, as they provide good aeration and water drainage, promoting healthy root development and optimal growth.
+    </p>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg p-8">
+    <h2 class="text-2xl font-bold mb-4 text-gray-900">Varieties of Sugarcane</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">
+      There are numerous varieties of sugarcane, each with its own unique characteristics and adaptability to different growing conditions. Some varieties are known for their high sucrose content, while others are prized for their disease resistance or tolerance to specific environmental factors. Popular varieties include 'Roorkee', 'Co-86032', 'Co-62175', and 'Co-89003', each offering distinct advantages and suitability for various regions.
+    </p>
+  </div>
 </div>
